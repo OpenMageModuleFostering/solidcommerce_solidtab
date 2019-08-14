@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>SolidCommerce_SolidTab</name>
+    <version>0.0.3</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension will install a tab in the admin page which enables Solid Commerce customers to conveniently manage their account inside Magento.</summary>
+    <description>After installation, you can access your inventory and orders from a drop down in the extension.  All functions of the Solid Commerce system can be achieved through the extension which will allow you to increase the efficiency of managing products, updating inventory, and shipping orders.</description>
+    <notes>Bug Fixed: Magento Conncet Page return 404 not found after installing extension</notes>
+    <authors><author><name>Solid Commerce</name><user>SolidCommerceAd</user><email>Contact@solidcommerce.com</email></author></authors>
+    <date>2013-10-11</date>
+    <time>17:52:26</time>
+    <contents><target name="magecommunity"><dir name="SolidCommerce"><dir name="SolidTab"><dir name="Helper"><file name="Data.php" hash="f60d39edb37d9eef644b13d127813b4f"/></dir><dir name="controllers"><dir name="AdminControllersHere"><file name="SolidTab2Controller.php" hash="1f5827a348fe65cc9520d53373c7fd84"/><file name="SolidTabController.php" hash="ca6fedacd0b6d0c90805549bd19e0208"/></dir></dir><dir name="etc"><file name="config.xml" hash="3e85c934487732ed34f097c5220d2088"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="SolidCommerce"><file name="sc_inventory.phtml" hash="573e035e3386ee67feda95320077c7aa"/><file name="sc_order.phtml" hash="23483c3182e6a485995599f8f5ca65b3"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SolidCommerce_SolidTab.xml" hash="03be3711aad446b36dced61ee8508265"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.5.0.0</min><max>1.8.0.0</max></package></required></dependencies>
+</package>

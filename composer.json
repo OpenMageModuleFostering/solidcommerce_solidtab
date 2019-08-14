@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/SolidCommerce_SolidTab",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "This extension will install a tab in the admin page which enables Solid Commerce customers to conveniently manage their account inside Magento.",
+    "authors": [
+    {
+        "name": "Solid Commerce",
+        "email": "Contact@solidcommerce.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

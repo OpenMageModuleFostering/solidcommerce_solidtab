@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SolidCommerce_SolidTab>
+            <version>0.1.0</version>
+        </SolidCommerce_SolidTab>
+    </modules> 
+    <global>
+        <blocks>
+            <solidtabblock1>
+            	<class>SolidCommerce_SolidTab_Block</class>
+           	</solidtabblock1>  
+			<solidtabblock2>
+            	<class>SolidCommerce_SolidTab_Block_EditSpecial</class>
+           	</solidtabblock2> 
+			<solidtabblock3>
+            	<class>SolidCommerce_SolidTab_Block_MarketPlace</class>
+           	</solidtabblock3>
+        </blocks>
+        <helpers>
+            <solidtabhelper1>
+                <class>SolidCommerce_SolidTab_Helper</class>
+            </solidtabhelper1>
+        </helpers>  
+	</global>    
+	<admin>
+		<routers>
+		   <adminhtml>
+                <use>admin</use>
+                <args>
+                    <module>SolidCommerce_SolidTab_AdminControllersHere</module>
+                    <frontName>admin</frontName>
+                    <modules>
+		         		<sintax after="SolidCommerce_SolidTab_AdminControllersHere">Mage_Adminhtml</sintax>
+		       		</modules>
+                </args>
+		   </adminhtml>
+	     </routers>    	
+	</admin>
+    <adminhtml>
+        <menu>
+             <mymenu1 translate="title" module="solidtabhelper1">
+                <title>Solid Commerce</title>
+                <sort_order>20</sort_order>
+                <children>
+                	
+                    <myitem1 translate="title" module="solidtabhelper1">
+                        <title>Inventory</title>
+                        <action>adminhtml/SolidTab</action>
+                        <sort_order>1</sort_order>                        
+                    </myitem1>
+					<myitem2 translate="title" module="solidtabhelper1">
+                        <title>Orders</title>
+                        <action>adminhtml/SolidTab2</action>
+                        <sort_order>2</sort_order>                        
+                    </myitem2>
+				</children>
+             </mymenu1>
+        </menu>
+	</adminhtml>     
+</config>
